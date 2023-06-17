@@ -139,11 +139,18 @@ Can be an integer to determine the exact padding."
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive)))
    (mode-line-emphasis :foreground (if doom-miozu-brighter-modeline base8 highlight))
 
+   ;; web-mode
+   (web-mode-doctype-face           :foreground comments)
+   (web-mode-html-tag-face          :foreground violet)
+   (web-mode-html-tag-bracket-face  :foreground violet)
+   (web-mode-html-entity-face       :foreground violet)
+   (web-mode-html-attr-name-face    :foreground base5)
+   (web-mode-block-control-face     :foreground blue)
    ;;;; rjsx-mode
    (rjsx-tag :foreground red)
    (rjsx-attr :foreground orange)
    ;;;; css-mode <built-in> / scss-mode
-   (css-proprietary-property :foreground orange)
+   (css-proprietary-property :foreground violet)
    (css-property             :foreground green)
    (css-selector             :foreground blue)
    ;;;; doom-modeline
